@@ -1,0 +1,156 @@
+
+html {
+    height: 100%;
+
+}
+
+html * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+body {
+    height : 100%;
+    font-size: 100%;
+    background-color : #FFF;
+}
+
+.banner {
+    width : 114%;
+    position: fixed;
+    
+}
+
+._content {
+    padding-left: 3%;
+    margin: auto;
+    margin-bottom: 8%;
+    top: 8%;
+    position: relative;
+    padding-bottom: 5%;
+    padding-top: 2%;
+
+    
+}
+._content .menu {
+    
+    padding-top: 2%;
+    display: inline-block;
+    padding-bottom: 2%;
+    margin-bottom: 1%;
+    width: 480px;
+}
+
+._content .menu ul {
+    list-style-type: none;
+    
+}
+
+._content .menu ul li{
+    padding: 5px 0px;
+    display: initial;
+    padding-right: 53px;
+
+    
+}
+
+._content .menu ul li a {
+    color: #383838; 
+    font-size: 1.5em;
+    cursor : pointer;
+    text-decoration: underline;
+    
+}
+
+._content .menu ul li a:hover,
+._content .menu ul li a:visited,
+._content .menu ul li a:active {
+    color: #383838; 
+    
+}
+
+._content .menu ul li a:hover{
+    text-decoration: none;
+    
+}
+
+
+.inline-block {
+    display: inline-block;
+}
+
+.color {
+    height: 13px;
+    display: inline-block;
+    float: left;
+}
+
+.w1 {
+    width: 1%;
+}
+
+.w2 {
+    width: 2%;
+}
+
+.w3 {
+    width: 3%;
+}
+
+.w5 {
+    width: 5%;
+}
+
+.w8 {
+    width: 8%;
+}
+
+.w13 {
+    width: 13%;
+}
+
+.w21 {
+    width: 21%;
+}
+
+.w34 {
+    width: 34%;
+}
+
+.cl1 {
+    background-color: #C42A1F ;
+}
+
+.cl2 {
+    background-color: orange ;
+}
+
+.cl3 {
+    background-color: #4286B3 ;
+}
+
+.cl4 {
+    background-color: #00B86B; /*green*/
+}
+
+.cl5 {
+    background-color: #9EE3F7;
+}
+
+.cl6 {
+    background-color: yellow ;
+}
+
+.cl7 {
+    background-color: #E6B1FA ;
+}
+
+.cl8 {
+    background-color: black ;
+}
+
+
