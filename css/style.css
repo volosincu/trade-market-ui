@@ -16,7 +16,7 @@ html * {
 body {
     height : 100%;
     font-size: 100%;
-    background-color : #FFF;
+    background-color : rgb(80, 80, 80);
 }
 
 .banner {
@@ -154,3 +154,10 @@ body {
 }
 
 
+.container .navbar {
+    margin-top: 60px;
+}
+
+.navbar-nav > li {
+    font-size: 17px;
+}

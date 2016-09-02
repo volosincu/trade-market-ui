@@ -35,36 +35,70 @@
 	<div class="color cl3  w1"> </div>
 	<div class="color cl8  w1"> </div>
 	  
-      </div>
-
-
-    
-    <div class="_content">
-
-      <div class="inline-block">
-	
-	
-	
-	<div class="menu">
-	  <ul>
-	    <li><a target="_blank" href="">a</a></li>
-	    <li><a target="_blank" href="">b</a></li>	
-	  </ul>
-	</div>
-      </div>
-
-      
-      <div class="inline-block">
-
-	<div id="world-map-gdp"></div>
-      </div>
-      
-      
     </div>
+
+
+    
+    <div class="container">
+
+
+
+      <div class="row">
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">show exchanges from :</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="dropdown">
+		<a id="dd-label"  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select Period <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		  <li><a href="#" id="last7">last 7 days</a></li>
+		  <li><a href="#" id="last30">last 30 days</a></li>
+		  <li><a href="#" id="last360">last year</a></li>
+		  <li><a href="#" id="lastall">all time</a></li>
+		  
+		</ul>
+	      </li>
+	      
+	      
+	    </ul>
+	 
+	  </div><!-- /.container-fluid -->
+
+	</nav>
+	
+      </div>     
+      
+      <div class="row">
+	<div class="">
+	  <div class="inline-block" style=" padding-top; 80px; width:100%;">
+	    
+	    <div id="world-map-gdp" style="width: 880px; height: 500px; margin: auto;"></div>
+	  </div>
+	</div>
+
+      </div>
+    
+      
+    </div>      
+
+
     
 
+   
     <script src="libs/jquery-3.1.0.min.js"> </script>
+    <script src="libs/bootstrap.min.js"> </script>
     <script src="libs/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="libs/mapmill.js"> </script>
     <script src="libs/map.js"> </script>
     
   </body>
