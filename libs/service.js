@@ -3,10 +3,10 @@
     
     context.Service = function (){
 	
-	
-	this.memq = {oc : {}, as : {}, ab :{}};
-	
-	var self = {};
+			
+	var self = {
+	    memq : {oc : {}, as : {}, ab :{}}
+	};
 	var reloadMap = function (id, data){
 	    
 	    document.getElementById(id).innerHTML = "";
@@ -21,7 +21,7 @@
 		    }]
 		},
 		onRegionTipShow: function(e, el, code){
-		    el.html(el.html()+' (GDP - '+data[code]+')');
+		    el.html(el.html()+' (' +cfg.ddkeys[cfg.selec.viewby] +' - '+data[code]+')');
 		}
 	    });
 
@@ -58,9 +58,9 @@
 	}
 	
 	
-	self.reloadMap = reloadMap.bind(this);
-	self.processData = processData.bind(this);
-	self.done = done.bind(this);
+	self.reloadMap = reloadMap.bind(self);
+	self.processData = processData.bind(self);
+	self.done = done.bind(self);
 	
 	return {
 	    async : function(timestamp){
@@ -75,6 +75,13 @@
 		    });
 		
 	    },
+
+	    refreshData : function(){
+		
+		$("#spinner").show();
+		self.reloadMap('world-map-gdp', self.memq[cfg.selec.viewby]);
+		
+	    }
 
 	    
 

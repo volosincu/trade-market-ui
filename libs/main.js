@@ -13,8 +13,9 @@ $(document).ready(function(){
 	    itemId = $(this).children(":first").attr("id");
 
 	cfg.selec.viewby = itemId;
-	$("#dd-label").text(cfg.ddLabelsViewBy[itemId]);
-	
+	$("#dd2 #dd-label").text(cfg.ddLabelsViewBy[itemId]);
+
+	uiService.refreshData();
     });
 
     
@@ -32,7 +33,7 @@ $(document).ready(function(){
 	    date = new Date(1970, 1, 1);
 	}
 
-	$("#dd-label").text(cfg.ddLabels[itemId]);
+	$("#dd1 #dd-label").text(cfg.ddLabels[itemId]);
 
 	uiService.async(date.getTime());
 	
