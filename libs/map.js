@@ -1,7 +1,11 @@
 
 var urls = {
     find : function(timestamp) {
-	return "http://localhost:8080/message?gte=" + timestamp;
+	if(/localhost/g.test(location.host)){
+	    return "http://localhost:8080/message?gte=" + timestamp;
+	}
+
+	return "http://icurrencyfair.herokuapp.com/message?gte=" + timestamp;
     }
 }
 
