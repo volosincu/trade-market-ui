@@ -21,7 +21,12 @@
 		    }]
 		},
 		onRegionTipShow: function(e, el, code){
-		    el.html(el.html()+' (' +cfg.ddkeys[cfg.selec.viewby] +' - '+data[code]+')');
+		    var label = cfg.ddkeys[cfg.selec.viewby];
+		    if(/country/gi.test(label)){
+			label = "nr. transactions";
+		    }
+		    
+		    el.html(el.html()+' (' +label +' - '+data[code]+')');
 		}
 	    });
 

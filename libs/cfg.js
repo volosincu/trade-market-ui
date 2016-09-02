@@ -23,15 +23,15 @@ var cfg = (function(){
 
 	ddkeys : {
 	    oc: "originatingCountry",
-	    ab: "amountSell",
-	    as : "amountBuy"
+	    ab: "amountBuy",
+	    as : "amountSell"
 	},
 
 
 	ddLabelsViewBy : {
 	    oc: "Originating Country",
-	    ab: "Amount Sell",
-	    as : "Amount Buy"
+	    ab: "Amount Buy",
+	    as : "Amount Sell"
 	},
 
 	selec : {
