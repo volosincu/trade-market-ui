@@ -8,7 +8,7 @@
     <title>Trade Market Exchange</title>
 
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
     <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='css/jquery-jvectormap-2.0.3.css' rel='stylesheet' type='text/css'>
     <link href='css/style.css' rel='stylesheet' type='text/css'>
@@ -49,22 +49,53 @@
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	      </button>
+	      
 	      <a class="navbar-brand" href="#">show exchanges from :</a>
 	    </div>
 	    <ul class="nav navbar-nav">
-	      <li class="dropdown">
-		<a id="dd-label"  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select Period <span class="caret"></span></a>
+	      <li id="dd1" class="dropdown">
+		<a id="dd-label"
+		   href="#"
+		   class="dropdown-toggle"
+		   data-toggle="dropdown"
+		   role="button"
+		   aria-haspopup="true"
+		   aria-expanded="false">Last 7 Days <span class="caret">
+		  </span>
+		</a>
 		<ul class="dropdown-menu">
-		  <li><a href="#" id="last7">last 7 days</a></li>
-		  <li><a href="#" id="last30">last 30 days</a></li>
-		  <li><a href="#" id="last360">last year</a></li>
-		  <li><a href="#" id="lastall">all time</a></li>
+		  <li><a href="#" id="last7">Last 7 days</a></li>
+		  <li role="separator" class="divider"></li>
+		  <li><a href="#" id="last30">Last 30 days</a></li>
+		  <li role="separator" class="divider"></li>
+		  <li><a href="#" id="last360">Last year</a></li>
+		  <li role="separator" class="divider"></li>
+		  <li><a href="#" id="lastall">All time</a></li>
+		  
+		</ul>
+	      </li>
+
+	      <li class="viewBy">
+		<a class="navbar-brand" href="#">view by :</a>
+	      </li>
+	      <li id="dd2" class="dropdown">
+		<a id="dd-label"
+		   href="#"
+		   class="dropdown-toggle"
+		   data-toggle="dropdown"
+		   role="button"
+		   aria-haspopup="true"
+		   aria-expanded="false">Originating Country
+		  <span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+		  <li><a href="#" id="ab">AmountBuy</a></li>
+		  <li role="separator" class="divider"></li>
+		  <li><a href="#" id="as">AmountSell</a></li>
+		  <li role="separator" class="divider"></li>
+		  <li><a href="#" id="oc">Originating Country</a></li>
+		  <li role="separator" class="divider"></li>
+		  
 		  
 		</ul>
 	      </li>
@@ -81,6 +112,14 @@
       <div class="row">
 	<div class="">
 	  <div class="inline-block" style=" padding-top; 80px; width:100%;">
+
+
+	    <div id="spinner" class="load-bar">
+	      <div class="bar"></div>
+	      <div class="bar"></div>
+	      <div class="bar"></div>
+	    </div>
+
 	    
 	    <div id="world-map-gdp" style="width: 880px; height: 500px; margin: auto;"></div>
 	  </div>
@@ -99,7 +138,11 @@
     <script src="libs/bootstrap.min.js"> </script>
     <script src="libs/jquery-jvectormap-2.0.3.min.js"></script>
     <script src="libs/mapmill.js"> </script>
-    <script src="libs/map.js"> </script>
+
+
+    <script src="libs/cfg.js"> </script>
+    <script src="libs/service.js"> </script>
+    <script src="libs/main.js"> </script>    
     
   </body>
 
