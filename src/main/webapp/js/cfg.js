@@ -6,9 +6,6 @@ var cfg = (function(){
 
 	urls : {
 	    find : function(timestamp) {
-		if(/localhost/g.test(location.host)){
-		    return "http://localhost:8080/messages?gte=" + timestamp;
-		}
 		return "http://icurrencyfair.herokuapp.com/messages?gte=" + timestamp;
 	    }
 	},
